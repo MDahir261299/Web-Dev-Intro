@@ -18,7 +18,7 @@ a {
 .background {
     width: 100%;
     height: 100%;
-    background-image: url('../img/background.jpg');
+    background-image: url('images/background.jpg');
     position: fixed;
     top: 0;
     z-index: -1;
@@ -122,7 +122,7 @@ a {
 }
 
 .hero-images {
-    min-width: 238px;
+    min-width: 338px;
 }
 
 @media screen and (max-width: 480px) {
@@ -151,19 +151,20 @@ a {
 }
 
 .hero-image-top {
-    background-image: url("../img/hero-image1.jpg");
+    background-image: url("images/hero-image1.jpg");
 }
 
 .hero-image-centre {
-    background-image: url("../img/hero-image2.jpg");
+    background-image: url("images/hero-image2.jpg");
 }
 
 .hero-image-bottom {
-    background-image: url("../img/hero-image3.jpg");
+    background-image: url("images/hero-image3.jpg");
 }
 
 .students {
     margin-top: 48px;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 480px) {
@@ -172,7 +173,9 @@ a {
     }
 }
 
-.students-title {
+.students-title,
+.instructor-title,
+.links-title {
     color: #FFFFFF;
     font-weight: 600;
     font-size: 48px;
@@ -180,3 +183,61 @@ a {
     border-bottom: 6px #FFFFFF solid;
 }
 
+.students-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.students-list-item {
+    padding: 24px;
+    display: block;
+}
+
+.students-list-item-image {
+    height: 150px;
+    width: 150px;
+}
+
+.instructor {
+    margin-top: 48px;
+    min-height: calc(50vh + 150px);
+}
+
+.instructor-content-item {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.instructor-content-item-details {
+    text-align: right;
+}
+
+.instructor-content-item-image {
+    height: 200px;
+    width: 200px;
+}
+
+.link-item {
+    background-color: #FC3952;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    margin: 16px 0 16px 36px;
+    text-align: right;
+    display: block;
+}
+
+.link-item:hover {
+    background-color: #9a0216;
+}
+
+.link-item-details {
+    font-size: 12px;
+    display: block;
+}

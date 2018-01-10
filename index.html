@@ -6,7 +6,7 @@
 
     <title>Intro to Websites</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 </head>
 <body>
@@ -18,8 +18,8 @@
         <div class="header-title">Introduction to Websites</div>
         <div class="header-links">
             <a href="#students" class="header-link">Students</a>
-            <div class="header-link">Instructor</div>
-            <div class="header-link">Useful Links</div>
+            <a href="#instructor" class="header-link">Instructor</a>
+            <a href="#links" class="header-link">Useful Links</a>
         </div>
     </header>
     <section class="hero">
@@ -45,7 +45,58 @@
     </section>
     <section id="students" class="students">
         <h1 class="students-title">Students</h1>
+        <div id="students-list" class="students-list"></div>
+    </section>
+    <section id="instructor" class="instructor">
+        <h1 class="instructor-title">Instructors</h1>
+        <div class="instructor-content">
+            <div class="instructor-content-item">
+                <img class="instructor-content-item-image" src="styles/images/instructor1.jpg">
+                <div class="instructor-content-item-details">
+                    <h3>Hilary McReynolds</h3>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <div class="instructor-content-item">
+                <img class="instructor-content-item-image" src="styles/images/instructor2.jpg">
+                <div class="instructor-content-item-details">
+                    <h3>Vini Bettega</h3>
+                    <p>IT Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="links" class="links">
+        <h1 class="links-title">Useful Links</h1>
+        <div class="links-list">
+            <a class="link-item" href="https://stackoverflow.com/">
+                <span>Stack Overflow</span>
+                <span class="link-item-details">Forum for questions about all aspects of software development</span>
+            </a>
+            <a class="link-item" href="https://github.com/hilarymcreynolds/Web-Dev-Intro/">
+                <span>This Repository</span>
+                <span class="link-item-details">Source for code relating to this website</span>
+            </a>
+            <a class="link-item" href="https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html/">
+                <span>UNIX commands</span>
+                <span class="link-item-details">A list of useful UNIX commands</span>
+            </a>
+            <a class="link-item" href="https://www.lemoda.net/windows/windows2unix/windows2unix.html/">
+                <span>UNIX to Windows</span>
+                <span class="link-item-details">A list of command conversions between UNIX and Windows</span>
+            </a>
+            <a class="link-item" href="https://github.com/hilarymcreynolds/Web-Dev-Intro/">
+                <span>Git Commands</span>
+                <span class="link-item-details">A list of useful commands for Git interactions</span>
+            </a>
+            <a class="link-item" href="https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html/">
+                <span>W3 Schools HTML</span>
+                <span class="link-item-details">Reference for HTML tags</span>
+            </a>
+        </div>
     </section>
 </div>
+
+<script src="scripts/students.js"></script>
 </body>
 </html>
