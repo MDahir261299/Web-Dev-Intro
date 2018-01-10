@@ -1,28 +1,54 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-    <title>Learning Javascript</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hilary McReynolds</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 </head>
 <body>
-<button id="textChanger">Change first div text</button>
-<div id="firstDiv">This is some text</div>
-<button id="textAppender">Append some text</button>
-<div id="secondDiv">Javascript is...</div>
-<button id="textCreator">Create some text</button>
-<div id="emptyDiv"></div>
-<script type="text/javascript">
-    document.getElementById("textChanger").onclick=function() {
-        document.getElementById("firstDiv").innerHTML="This is awesome!";
-    }
-    document.getElementById("textAppender").onclick=function() {
-        document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "great!";
-    }
-    document.getElementById("textCreator").onclick=function() {
-        document.getElementById("emptyDiv").innerHTML="<ul><li>Cat</li><li>Dog</li></ul>";
-    }
-</script>
+<div class="background">
+    <div class="background-overlay"></div>
+</div>
+<div class="content">
+    <header class="header">
+        <div class="header-title">Hilary McReynolds</div>
+        <div class="header-links">
+            <a href="../index.html" class="header-link">Back</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-title-wrapper">
+            <h1 class="hero-title">Hilary McReynolds</h1>
+            <img class="instructor-content-item-image" src="../styles/images/instructor1.jpg">
+            <div class="hero-title-subtitle">
+                <div>
+                    I am the instructor of this course. I am originally from Canada, and have lived in the United States
+                    and England as well. I came to the UK in 2011 for graduate school, and then decided to stay here
+                    for the foreseeable future.  I have worked as a Computer Science Teacher, Mathematics Teacher and a
+                    Software Engineer here in London.
+                </div>
+                <h3>A little about my Software skills</h3>
+                <ul>
+                    <li>General web development (HTML / CSS / Javascript...)</li>
+                    <li>Web development with React framework</li>
+                    <li>Full stack Java development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="interest" class="interest">
+        <h1 class="interest-title">Personal Interests</h1>
+        <a class="link-item interest-hiking" href="hiking/index.html">
+            <span>Hiking</span>
+            <span class="link-item-details">Something I do a lot on the weekends</span>
+        </a>
+    </section>
+    <section id="game" class="game">
+    </section>
+</div>
 </body>
 </html>
